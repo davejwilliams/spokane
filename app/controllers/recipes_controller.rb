@@ -1,8 +1,11 @@
 class RecipesController < ApplicationController
+
+	before_filter :authenticate_user!
+
   # GET /recipes
   # GET /recipes.json
   def index
-    @recipes = Recipe.all
+    @recipes = Recipe.page(params[:page]).order('name ASC')
 
     respond_to do |format|
       format.html # index.html.erb

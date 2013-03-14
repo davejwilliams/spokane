@@ -1,8 +1,13 @@
 Demo::Application.routes.draw do
+  devise_for :users
+
   resources :recipes
 
+  #root to: 'recipes#index'
+  root to: 'page#home'
 
-  get 'page/home'
+  #get 'page/home'
+  match 'page/home' => redirect('')
   get 'page/contact'
   post 'page/contact'
   #get 'page/recipes'
@@ -14,8 +19,6 @@ Demo::Application.routes.draw do
 
   get 'say/hello'
   get 'say/goodbye'
-
-  root to: 'recipes#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

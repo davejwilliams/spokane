@@ -7,6 +7,16 @@
     <li><%= link_to_unless_current 'Calendar', page_calendar_path %></li>
     <li><%= link_to_unless_current 'Blog', page_blog_path %></li>
     <li><%= link_to_unless_current 'Contact', page_contact_path %></li>
-    <li><%= link_to_unless_current 'Login', page_login_path %></li>
+
+    <% if user_signed_in? %>
+        <li>
+          <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+        </li>
+    <% else %>
+        <li>
+          <%= link_to('Login', new_user_session_path)  %>
+        </li>
+    <% end %>
+
   </ul>
 </div>
