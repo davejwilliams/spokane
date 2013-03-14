@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5ae7fc0-a16b-42f3-ad9c-833771e3bd4d" name="Default" comment="Adding Devise">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_navigation.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_navigation.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/demo.iml" afterPath="$PROJECT_DIR$/.idea/demo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/recipes/index.html.erb" afterPath="$PROJECT_DIR$/app/views/recipes/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/recipe.rb" afterPath="$PROJECT_DIR$/app/models/recipe.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/recipes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/recipes_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/recipes/show.html.erb" afterPath="$PROJECT_DIR$/app/views/recipes/show.html.erb" />
+    <list default="true" id="a5ae7fc0-a16b-42f3-ad9c-833771e3bd4d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/burger.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/potatoes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130313054034_devise_create_users.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130313232518_add_admin_and_name_to_users.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/locales/devise.en.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/user_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="demo.iws" />
@@ -28,7 +24,7 @@
     <file path="/a.html" changelist="a5ae7fc0-a16b-42f3-ad9c-833771e3bd4d" time="1362207494651" ignored="false" />
     <file path="/goodbye.html.erb" changelist="a5ae7fc0-a16b-42f3-ad9c-833771e3bd4d" time="1362208555435" ignored="false" />
     <file path="/application.html.erb" changelist="a5ae7fc0-a16b-42f3-ad9c-833771e3bd4d" time="1363217904047" ignored="false" />
-    <file path="/Dummy.txt" changelist="a5ae7fc0-a16b-42f3-ad9c-833771e3bd4d" time="1363218969984" ignored="false" />
+    <file path="/Dummy.txt" changelist="a5ae7fc0-a16b-42f3-ad9c-833771e3bd4d" time="1363219147088" ignored="false" />
     <file path="/styles.css" changelist="a5ae7fc0-a16b-42f3-ad9c-833771e3bd4d" time="1362527374749" ignored="false" />
     <file path="/application.css" changelist="a5ae7fc0-a16b-42f3-ad9c-833771e3bd4d" time="1362250838990" ignored="false" />
     <file path="/routes.rb" changelist="a5ae7fc0-a16b-42f3-ad9c-833771e3bd4d" time="1363155507840" ignored="false" />
@@ -828,7 +824,11 @@
       <created>1363219004954</created>
       <updated>1363219004954</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding Devise">
+      <created>1363219204857</created>
+      <updated>1363219204857</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
