@@ -1,4 +1,5 @@
 class Recipe < ActiveRecord::Base
+	has_many :reviews
   attr_accessible :cost, :image, :ingredients, :last_made, :made_by, :name, :serves
 
   self.per_page = 5

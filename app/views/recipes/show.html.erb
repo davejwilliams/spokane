@@ -15,6 +15,14 @@
   <%= @recipe.ingredients.html_safe %>
 </p>
 
+
+<p>
+<strong>Average Rating:</strong> <% @recipe.reviews.average(:rating).to_i.times do %>
+    <%= image_tag 'star.png' %>
+<% end %>
+<%= @recipe.reviews.average(:rating).to_i %>/5
+</p>
+
 <p>
   <b>Last made:</b>
   <%= @recipe.last_made %>
@@ -38,3 +46,42 @@
 
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
 <%= link_to 'Back', recipes_path %>
+
+<br><br>R E V I E W S :<br>
+<!-- TODO: Give this pagination -->
+<% @recipe.reviews.each do |review| %>
+    <hr>
+    <p><strong><%= review.title %></strong> by, <em><%= review.author %></em> (<%= time_ago_in_words(review.created_at) %> ago) said:</p><br>
+    <p><%= review.content %></p><br>
+    <% review.rating.times do %>
+        <%= image_tag 'star.png' %>
+    <% end %>
+    <%= review.rating %>/5
+<% end %>
+
+
+<hr>
+<hr>
+
+<%= form_for([@recipe, @recipe.reviews.build]) do |f| %>
+
+    <div class="field">
+      <%= f.label :title %><br />
+      <%= f.text_field :title %>
+    </div>
+    <div class="field">
+      <%= f.label :author %><br />
+      <%= f.text_field :author %>
+    </div>
+    <div class="field">
+      <%= f.label :content %><br />
+      <%= f.text_area :content %>
+    </div>
+    <div class="field">
+      <%= f.label :rating %><br />
+      <%= f.select(:rating, options_for_select(1..5)) %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

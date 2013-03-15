@@ -1,7 +1,9 @@
 Demo::Application.routes.draw do
   devise_for :users
 
-  resources :recipes
+  resources :recipes do
+    resources :reviews    #nested route
+  end
 
   #root to: 'recipes#index'
   root to: 'page#home'
